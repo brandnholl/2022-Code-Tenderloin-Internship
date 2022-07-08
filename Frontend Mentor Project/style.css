@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+html{
+ font-family: 'Karla', sans-serif;
+ Font-size: 16px
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  background-color: hsl(204, 43%, 93%);
+}
+.container{
+  display:grid;
+  grid-template-columns: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.principal{
+  background-color: white;
+}
+
+.principal h1{
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.principal h2{
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.principal p{
+  color: hsl(218, 22%, 67%);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.subscription{
+  background-color: hsl(179, 62%, 43%);
+}
+
+.subscription h2{
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.subscription p{
+  color:hsl(204, 43%, 93%);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.subscription .button{
+  text-align: center;
+  width: 100%;
+  padding:15px;
+  background-color: hsl(71, 73%, 54%);
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 15px;
+}
+.subscription span{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.why-us{
+  background-color: #4abebd;
+}
+
+.why-us h2{
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.why-us ul{
+  color: hsl(204, 43%, 93%);
+  list-style: none;
+  line-height: 1.5rem;
+}
+@media only screen and (min-width: 1000px) {
+  .container{
+    grid-template-columns: 50% 50%;
+  }
+  .principal{
+    grid-area: 1/ 1/ 2/ 3;
+  }
+  .subscription, .why-us{
+    grid-row: 2;
+  }
+}
